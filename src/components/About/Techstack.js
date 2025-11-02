@@ -103,11 +103,6 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={MUI} alt="mui" />
-        <div className="tech-icons-text">Material UI</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
         <img src={Postman} alt="Postman" />
         <div className="tech-icons-text">Postman</div>
       </Col>
