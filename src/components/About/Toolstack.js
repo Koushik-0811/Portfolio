@@ -10,15 +10,15 @@ function Toolstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
+        <div className="tech-icons-text">Windows OS</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons ">
         <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
+        <div className="tech-icons-text">Arc Browser</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons ">
         <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
+        <div className="tech-icons-text">VS Code</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons ">

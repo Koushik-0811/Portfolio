@@ -11,17 +11,11 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Sai Koushik Puppala</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SKP</h3>
-        </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/puppala-koushik"
+                href="https://github.com/Koushik-0811"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -31,7 +25,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/koushik-0811"
+                href="https://www.linkedin.com/in/puppala-koushik"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

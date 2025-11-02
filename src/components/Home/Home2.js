@@ -39,8 +39,7 @@ function Home2() {
               Whenever possible, I love building projects with
               <b className="purple"> React.js and Django/Spring Boot </b> for full-stack applications, deploying them on{" "}
               <i>
-                <b className="purple">AWS</b> and{" "}
-                <b className="purple">cloud platforms</b>.
+                <b className="purple">AWS</b>.
               </i>
             </p>
           </Col>

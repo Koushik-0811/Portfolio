@@ -57,7 +57,7 @@ function Home() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/puppala-koushik"
+                  href="https://github.com/Koushik-0811"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -67,7 +67,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/koushik-0811"
+                  href="https://www.linkedin.com/in/puppala-koushik"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

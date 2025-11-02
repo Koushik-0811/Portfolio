@@ -8,8 +8,7 @@ function Type() {
         strings: [
           "Full Stack Developer",
           "B.Tech Student @ NIT Patna",
-          "MERN Stack Developer",
-          "Cloud Enthusiast",
+          "AI/ML and Cloud Enthusiast"
         ],
         autoStart: true,
         loop: true,
