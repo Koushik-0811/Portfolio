@@ -2,11 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -25,10 +22,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Match Making Application"
+              description="Built a scalable full-stack matchmaking platform enabling users to discover and connect with others based on shared interests, location, preferences, and unique usernames. Developed a responsive, component-driven frontend using React + TypeScript with state management using Redux. Integrated RESTful APIs for authentication, profiles, polls, forums, and chat features using Django REST Framework. Enabled real-time messaging and notifications using WebSockets (socket.io) including both individual and group chats. Deployed on AWS EC2 with Nginx, achieving high availability and scalability for concurrent users."
+              ghLink="https://github.com/puppala-koushik"
+              // demoLink=""
             />
           </Col>
 
@@ -36,10 +33,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="YouTube Clone"
+              description="Built a scalable YouTube Clone with core features including video playback, search functionality and responsive design. Integrated the YouTube Data API v3 for fetching video metadata, search results, and channel details in real-time. Enhanced UI with SCSS/SASS modules, achieving modular styling and 20% faster page performance through AJAX-based data fetching. Implemented authentication and user preferences (dark mode, subscriptions) using Firebase Auth + Firestore. Deployed the application on Vercel."
+              ghLink="https://github.com/puppala-koushik"
+              // demoLink=""
             />
           </Col>
 
@@ -47,44 +44,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="SplitPay – Expense Sharing App"
+              description="Built a web application where friends or groups can split bills and track shared expenses in real time. Implemented user authentication and session management using JWT, ensuring secure access to expense data. Engineered scalable and secure RESTful APIs using Java (Spring Boot) for managing users, groups, and transactions, with efficient data persistence in MongoDB. Created a responsive and clean UI with React + Bootstrap, enabling easy expense entry and balance calculation. Integrated mock PayPal Sandbox API for simulating payments between group members. Deployed on Heroku, ensuring accessibility and scalability for multiple users."
+              ghLink="https://github.com/puppala-koushik"
+              // demoLink=""
             />
           </Col>
         </Row>

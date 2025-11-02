@@ -13,37 +13,34 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I'm a passionate Full Stack Developer currently pursuing B.Tech in Electronics and Communication Engineering at NIT Patna with a CGPA of 9.4. I love transforming ideas into reliable, scalable products and have explored various technologies to build high-performance systems and intuitive user experiences.
               <br />
               <br />
-              I’m proficient in
+              I'm proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Python, Java, C++, JavaScript, TypeScript, React.js, Node.js, and GoLang{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — and I enjoy working across both backend and frontend stacks, cloud technologies, and DevOps.
               <br />
               <br />
               My key areas of interest include developing
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Full Stack Web Applications, Scalable Backend Systems,{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and exploring cloud technologies like AWS, GCP, and containerization with Docker and Kubernetes.
               <br />
               <br />
               Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              <b className="purple"> React.js and Django/Spring Boot </b> for full-stack applications, deploying them on{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">AWS</b> and{" "}
+                <b className="purple">cloud platforms</b>.
               </i>
             </p>
           </Col>

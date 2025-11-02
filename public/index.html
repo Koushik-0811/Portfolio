@@ -8,33 +8,109 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>S0umyajit | Portfolio</title>
-  <meta name="description" content="Self Developed personal website build with React.js">
+  <title>Sai Koushik Puppala | Portfolio</title>
+  <meta name="description" content="Portfolio website of Sai Koushik Puppala - Full Stack Developer and B.Tech Student at NIT Patna">
 
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="S0umyajit | Portfolio">
-  <meta itemprop="description" content="Self Developed personal website build with React.js">
+  <meta itemprop="name" content="Sai Koushik Puppala | Portfolio">
+  <meta itemprop="description" content="Portfolio website of Sai Koushik Puppala - Full Stack Developer and B.Tech Student at NIT Patna">
   <meta itemprop="image"
-    content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+    content="https://raw.githubusercontent.com/puppala-koushik/Portfolio/master/Images/readme-img.png">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://soumyajit.vercel.app">
+  <meta property="og:url" content="https://puppala-koushik.github.io">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="S0umyajit | Portfolio">
-  <meta property="og:description" content="Self Developed personal website build with React.js">
+  <meta property="og:title" content="Sai Koushik Puppala | Portfolio">
+  <meta property="og:description" content="Portfolio website of Sai Koushik Puppala - Full Stack Developer and B.Tech Student at NIT Patna">
   <meta property="og:image"
-    content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+    content="https://raw.githubusercontent.com/puppala-koushik/Portfolio/master/Images/readme-img.png">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="S0umyajit | Portfolio">
-  <meta name="twitter:description" content="Self Developed personal website build with React.js">
+  <meta name="twitter:title" content="Sai Koushik Puppala | Portfolio">
+  <meta name="twitter:description" content="Portfolio website of Sai Koushik Puppala - Full Stack Developer and B.Tech Student at NIT Patna">
   <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+    content="https://raw.githubusercontent.com/puppala-koushik/Portfolio/master/Images/readme-img.png">
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script>
+    // Suppress fetch errors from browser extensions (must run before React loads)
+    (function() {
+      // Intercept fetch calls from extensions
+      const originalFetch = window.fetch;
+      window.fetch = function(...args) {
+        try {
+          return originalFetch.apply(this, args).catch(function(error) {
+            // Suppress fetch errors that mention postUserData
+            if (error && (error.message && error.message.includes('Failed to fetch'))) {
+              // Check if this is from an extension by looking at stack trace
+              const stack = error.stack || '';
+              if (stack.includes('postUserData') || stack.includes('init')) {
+                // Return a rejected promise that we'll handle
+                return Promise.reject(new Error('Extension fetch suppressed'));
+              }
+            }
+            throw error;
+          });
+        } catch (e) {
+          if (e && e.message && e.message.includes('postUserData')) {
+            return Promise.reject(new Error('Extension fetch suppressed'));
+          }
+          throw e;
+        }
+      };
+
+      // Catch errors from extensions
+      const originalError = window.onerror;
+      window.onerror = function(message, source, lineno, colno, error) {
+        if (
+          (message && (message.includes('Failed to fetch') || message.includes('postUserData'))) ||
+          (error && error.message && (error.message.includes('Failed to fetch') || error.message.includes('postUserData'))) ||
+          (error && error.stack && (error.stack.includes('postUserData') || error.stack.includes('init')))
+        ) {
+          return true; // Suppress the error
+        }
+        if (originalError) {
+          return originalError(message, source, lineno, colno, error);
+        }
+        return false;
+      };
+
+      // Catch unhandled promise rejections
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        if (
+          reason &&
+          (
+            (reason.message && (reason.message.includes('Failed to fetch') || reason.message.includes('postUserData') || reason.message.includes('Extension fetch suppressed'))) ||
+            (reason.toString && reason.toString().includes('Failed to fetch')) ||
+            (reason.stack && (reason.stack.includes('postUserData') || reason.stack.includes('init')))
+          )
+        ) {
+          event.preventDefault();
+          event.stopPropagation();
+          event.stopImmediatePropagation();
+          return false;
+        }
+      }, true);
+
+      // Additional error listener
+      window.addEventListener('error', function(event) {
+        if (
+          (event.message && (event.message.includes('Failed to fetch') || event.message.includes('postUserData'))) ||
+          (event.error && event.error.message && (event.error.message.includes('Failed to fetch') || event.error.message.includes('postUserData'))) ||
+          (event.error && event.error.stack && (event.error.stack.includes('postUserData') || event.error.stack.includes('init')))
+        ) {
+          event.preventDefault();
+          event.stopPropagation();
+          event.stopImmediatePropagation();
+          return false;
+        }
+      }, true);
+    })();
+  </script>
   <div id="root"></div>
 </body>
 
